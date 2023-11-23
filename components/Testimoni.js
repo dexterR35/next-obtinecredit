@@ -16,7 +16,7 @@ const Testimoni = ({
 
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Am recurs la serviciile oferite de Obtine Credit.ro după ce am întâmpinat eșecuri în încercările mele de a obține un credit de nevoi personale. Acum, după ce am parcurs întregul proces, nu sunt sigur dacă m-aș fi descurcat fără ajutorul lor",
     },
     {
       name: "Florin Chelu",
@@ -25,7 +25,7 @@ const Testimoni = ({
 
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Nu mă așteptam să îndeplinesc criteriile pentru un credit ipotecar până când nu am descoperit sprijinul oferit de echipa Obtine Credit. Prin intermediul serviciilor lor de consultanță, am reușit să identific banca potrivită pentru situația mea",
     },
     {
       name: "Hodor Gabriela",
@@ -34,16 +34,16 @@ const Testimoni = ({
 
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Când compania mea a avut nevoie urgentă de fonduri pentru investiții, dosarul de creditare a fost respins de băncile partenere. Prin intermediul colaborării cu Obtine Credit, am identificat rapid oferte noi, iar finanțarea obținută a fost soluția crucială în perioada dificilă",
     },
     {
-      name: "Tanase Aurelian",
+      name: "Hodor Gabriela",
       image: "/assets/people-3.png",
       jobTitle: "Consultant Financiar",
 
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Când compania mea a avut nevoie urgentă de fonduri pentru investiții, dosarul de creditare a fost respins de băncile partenere. Prin intermediul colaborării cu Obtine Credit, am identificat rapid oferte noi, iar finanțarea obținută a fost soluția crucială în perioada dificilă",
     },
   ],
 }) => {
@@ -87,11 +87,11 @@ const Testimoni = ({
         {...settings}
         arrows={false}
         ref={setSliderRef}
-        className="flex items-stretch justify-items-stretch"
+        className="flex items-stretch justify-items-stretch "
       >
         {listTestimoni.map((listTestimonis, index) => (
-          <div className="px-3 flex items-stretch" key={index}>
-            <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
+          <div className="flex items-stretch px-3" key={index}>
+            <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-6 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
                   <Image
@@ -116,7 +116,9 @@ const Testimoni = ({
                   </span>
                 </div>
               </div>
-              <p className="mt-5 text-left">“{listTestimonis.testimoni}”.</p>
+              <p className="mt-5 text-left text-sm">
+                “{listTestimonis.testimoni}”.
+              </p>
             </div>
           </div>
         ))}

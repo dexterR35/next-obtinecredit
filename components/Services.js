@@ -37,14 +37,14 @@ const Services = () => {
       imgSecond: "test",
       title: "Stergere din biroul de credit",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores perspiciatis ipsum repellendus aspernatur iusto numquam aliquid cumque optio illo! Temporibus!",
+        "Asigurați-vă un start proaspăt eliminând datele negative din biroul de credit. Echipa noastră vă oferă suport specializat pentru a remedia situațiile financiare nefericite și a vă restabili un profil de credit pozitiv.",
     },
     {
       img: cardImg,
       imgSecond: "test",
       title: "credite IMM-uri",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores perspiciatis ipsum repellendus aspernatur iusto numquam aliquid cumque optio illo! Temporibus!",
+        "Optați pentru creditele pe firmă pentru a-ți dezvolta afacerea fără a-ți utiliza propriile resurse financiare. Echipa noastră vă oferă soluții personalizate pentru a obține finanțarea necesară și a consolida succesul în mediul de afaceri.",
     },
     {
       img: cardImg,
@@ -61,7 +61,7 @@ const Services = () => {
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
       id="services"
     >
-      <div className="max-w-screen-2xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+      <div className="max-w-screen-2xl px-4 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3
@@ -79,7 +79,7 @@ const Services = () => {
             </motion.p>
           </ScrollAnimationWrapper>
 
-          <div className="grid grid-flow-row sm:grid-flow-row grid-cols-3 gap-4 py-2 lg:py-12 px-6 sm:px-0 lg:px-6 bg-white">
+          <div className="sm:grid sm:grid-cols-3 flex flex-col sm:grid-flow-row gap-4 py-4 lg:py-10 sm:px-0 lg:px-6 bg-white">
             {dataCards.map((card, index) => (
               <ScrollAnimationWrapper
                 className="flex justify-center"
@@ -87,7 +87,7 @@ const Services = () => {
               >
                 <motion.div
                   variants={scrollAnimation}
-                  className="cursor-pointer flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-2 xl:px-5 w-[25rem] h-[90%] bg-white-500 "
+                  className="cursor-pointer flex flex-col justify-between items-center border-2 border-gray-500 rounded-xl py-4 px-4 lg:px-2 xl:px-5 w-[25rem] h-[100%] bg-white-500 "
                   whileHover={{
                     scale: 1.03,
                     transition: {
@@ -95,26 +95,26 @@ const Services = () => {
                     },
                   }}
                 >
-                  <div className="p-2 lg:p-0 mt-4 mb-2 flex flex-row items-center bg-gradient-to-b from-white-300 to-white-500 w-full justify-around rounded-md">
+                  <div className="p-2 lg:p-0 my-2 flex flex-row items-center bg-gradient-to-b from-white-300 to-white-500 w-full justify-around rounded-md h-15">
                     <Image
                       src={card.img}
-                      width={80}
-                      height={80}
+                      width={50}
+                      height={50}
                       alt="Free Plan"
                     />
                     <p className="text-lg md:text-xl text-black-600 font-medium capitalize my-2 sm:my-2 bg-black-300 w-[60%]">
                       {card.title}
                     </p>
                   </div>
-                  <div className="flex flex-col w-full justify-center mb-8 flex-none mt-4">
-                    <p className="text-sm text-black-600 text-start mb-4 ">
+                  <div className="flex flex-col w-full flex-none">
+                    <p className="text-sm text-black-600 text-start">
                       {card.description}
                     </p>
                     {/* <ButtonPrimary className="h-[20px]">
                       Afla mai multe
                     </ButtonPrimary> */}
-                    <div className="text-end pr-10 mt-1 text-sm">
-                      afla mai multe...
+                    <div className="px-5 mt-2 text-sm bg-green-500 rounded-md w-fit text-white-500 p-2 place-self-end">
+                      Afla mai multe
                     </div>
                   </div>
                 </motion.div>
@@ -157,7 +157,7 @@ const Services = () => {
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
-        <div className="flex flex-col w-full my-16" id="testimoni">
+        <div className="flex flex-col w-full " id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -173,19 +173,26 @@ const Services = () => {
               great pleasure when using this crazy feature.
             </motion.p>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="w-full flex flex-col py-12">
+          <ScrollAnimationWrapper className="w-full flex flex-col pt-12">
             <motion.div variants={scrollAnimation}>
               <Testimoni />
             </motion.div>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="relative w-full mt-16">
+          <ScrollAnimationWrapper className="relative w-full">
             <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
-              <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
+              <div className="relative top-[150px] rounded-xl py-8 sm:py-14 px-4 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-                  <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                    Subscribe Now for <br /> Get Special Features!
+                  <h5 className="text-black-600 text-xl sm:text-2xl lg:text-4xl leading-relaxed font-medium mb-2">
+                    Descoperă secretele <br />
+                    financiare
                   </h5>
-                  <p>Lets subscribe with us and find the fun.</p>
+                  <p>
+                    {" "}
+                    Abonează-te pentru sfaturi exclusive de la consultanți.
+                  </p>
+                  <p className="text-[13px]">
+                    #Credite #ConsultanțăFinanciară #EducațieFinanciară
+                  </p>
                 </div>
                 <ButtonPrimary>Intra online</ButtonPrimary>
               </div>
